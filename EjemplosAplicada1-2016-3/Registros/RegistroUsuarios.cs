@@ -22,6 +22,12 @@ namespace EjemplosAplicada1_2016_3.Registros
         {
             Usuarios usuario = new Usuarios();
 
+            if (!Validar())
+            {
+                MessageBox.Show("complete todos los datos");
+                return;
+            }
+
             usuario = LlenarClase();
 
             if (UsuariosBll.Guardar(usuario))
@@ -30,6 +36,19 @@ namespace EjemplosAplicada1_2016_3.Registros
 
                 MessageBox.Show("Guardo. ehehehehe");
             }
+        }
+
+        private bool Validar()
+        {
+            bool retorno = true;
+
+            if (string.IsNullOrEmpty(nombreTextBox.Text))
+            {
+                errorProvider1.SetError(nombreTextBox, "Debe introducir el nombre");
+                retorno = false;
+            }
+
+            return retorno;
         }
 
         private Usuarios LlenarClase()
