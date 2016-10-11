@@ -6,15 +6,7 @@ using Entidades;
 using DAL;
 namespace BLL
 {
-    public interface AccionesRegistro
-    {
-        bool Insertar();
-
-        bool Editar();
-
-        bool Eliminar();
-
-    }
+   
     public class UsuariosBll
     {
         public static bool Guardar(Usuarios usuario)
@@ -49,7 +41,7 @@ namespace BLL
             db.SaveChanges();
         }
 
-        public static Usuarios Buscar(int idPelicula)
+        public static Usuarios Buscar(int id)
         {
             var db = new EjemploDb();
 
