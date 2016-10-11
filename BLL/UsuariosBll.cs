@@ -6,7 +6,7 @@ using Entidades;
 using DAL;
 namespace BLL
 {
-   
+
     public class UsuariosBll
     {
         public static bool Guardar(Usuarios usuario)
@@ -30,10 +30,10 @@ namespace BLL
 
             return retorno;
         }
-        
+
         public static void Eliminar(int id)
         {
-            var db = new EjemploDb ();
+            var db = new EjemploDb();
 
             Usuarios usuario = Buscar(id);
 
@@ -45,7 +45,7 @@ namespace BLL
         {
             var db = new EjemploDb();
 
-            return db.Usuario.Find(idPelicula);
+            return db.Usuario.Find(id);
 
         }
 
@@ -55,11 +55,22 @@ namespace BLL
 
             var db = new EjemploDb();
 
-            lista = db.Usuario.Where(u => u.UsuarioId == 1).ToList();
+            lista = db.Usuario.ToList();
 
-                        return lista;
+            return lista;
 
         }
 
+        public static List<Usuarios> GetLista(int usuarioId)
+        {
+            List<Usuarios> lista = new List<Usuarios>();
+
+            var db = new EjemploDb();
+
+            lista = db.Usuario.Where(p=> p.UsuarioId==usuarioId) .ToList();
+
+            return lista;
+
+        }
     }
 }
