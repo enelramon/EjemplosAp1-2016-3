@@ -8,6 +8,7 @@ namespace Entidades
 {
    public class Usuarios
     {
+
         [Key]
         public int UsuarioId { get; set; }
 
