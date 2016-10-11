@@ -102,10 +102,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Database\EjemplosDb.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Database\EjemplosDb_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <DependentUpon>EjemplosDb.mdf</DependentUpon>
     </Content>
   </ItemGroup>

@@ -6,9 +6,18 @@ using Entidades;
 using DAL;
 namespace BLL
 {
+    public interface AccionesRegistro
+    {
+        bool Insertar();
+
+        bool Editar();
+
+        bool Eliminar();
+
+    }
     public class UsuariosBll
     {
-        public static bool Insertar(Usuarios usuario)
+        public static bool Guardar(Usuarios usuario)
         {
             bool retorno = false;
 
@@ -29,5 +38,36 @@ namespace BLL
 
             return retorno;
         }
+        
+        public static void Eliminar(int id)
+        {
+            var db = new EjemploDb ();
+
+            Usuarios usuario = Buscar(id);
+
+            db.Usuario.Remove(usuario);
+            db.SaveChanges();
+        }
+
+        public static Usuarios Buscar(int idPelicula)
+        {
+            var db = new EjemploDb();
+
+            return db.Usuario.Find(idPelicula);
+
+        }
+
+        public static List<Usuarios> GetLista()
+        {
+            List<Usuarios> lista = new List<Usuarios>();
+
+            var db = new EjemploDb();
+
+            lista = db.Usuario.Where(u => u.UsuarioId == 1).ToList();
+
+                        return lista;
+
+        }
+
     }
 }
