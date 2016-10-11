@@ -1,4 +1,5 @@
 ﻿using Entidades;
+using Microsoft.Reporting.WinForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -21,15 +22,15 @@ namespace EjemplosAplicada1_2016_3.Consultas
         {
 
         }
-
+        public List<Usuarios> lista = new List<Usuarios>();
         private void Buscarbutton_Click(object sender, EventArgs e)
         {
-            var lista = new List<Usuarios>();
+
 
             if (!String.IsNullOrEmpty(FiltrotextBox.Text))
             {
 
-               lista =  BLL.UsuariosBll.GetLista(ToInt(FiltrotextBox.Text));
+                lista = BLL.UsuariosBll.GetLista(Utilidades.ToInt(FiltrotextBox.Text));
             }
             else
             {
@@ -39,13 +40,23 @@ namespace EjemplosAplicada1_2016_3.Consultas
             DatosdataGridView.DataSource = lista;
         }
 
-        private int ToInt(string Numero)
+        private void Imprimebutton_Click(object sender, EventArgs e)
         {
-            int retorno = 0;
+            MyViewer viewer = new MyViewer();
 
-            int.TryParse(Numero, out retorno);
+            viewer.RptViewer.Reset();
+            viewer.RptViewer.ProcessingMode = Microsoft.Reporting.WinForms.ProcessingMode.Local;
 
-            return retorno;
+            viewer.RptViewer.LocalReport.ReportPath = @"Reportes\ListadoUsuarios.rdlc";
+
+            viewer.RptViewer.LocalReport.DataSources.Clear();
+
+      
+            viewer.RptViewer.LocalReport.DataSources.Add(new ReportDataSource("DataSetUsuarios", lista));
+
+            viewer.RptViewer.LocalReport.Refresh();
+
+            viewer.Show();
         }
     }
 }

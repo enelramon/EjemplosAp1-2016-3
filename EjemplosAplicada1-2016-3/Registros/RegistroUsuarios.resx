@@ -265,19 +265,13 @@
         E1Og9EO4Tfpfwidy1LZuBYyFYZuxhEPcyEU6Cf8DRpwM1VZPM3QAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="UpdateButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        R0lGODlhHgAeAIUAAKmpAaWlAZ+fAZmZAZGRAY2NAYqKAYmJAYWFAYKCAXd3AcfHAcHBAcDAAb+/Abq6
-        Abi4Abe3Aba2AbOzAbCwAa2tAaysAaqqAaioAaenAaamAaSkAaOjAaGhAaCgAZ2dAZycAZubAZaWAZWV
-        AY6OAYyMAYSEAYCAAX5+AXZ2AXV1Af///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEBAAAh+QQBAAArACwAAAAAHgAe
-        AAAI/wBXCBxIsKDBgwgTKlzIsOHCBxweOJy4YcOFiQwXZADAAePCDBs7LhRAsmSHkydFrhAAIEAIhREC
-        tAxAsybNAQMF1JyQMIKADDaDCpC4YoFOlwknCPDQYWnJpwNACBwQgKTADAaVkhwgwsIDB2C/OoAgMAQI
-        kgEQUog6gALDqCIEiEAIYcCAAgIJ6CUwtyABECBC4F0hogABwxYq2AWwwu6IASMICCxAuYBdyINXALA8
-        AIDiwZYJPDYgsARkyHzvFqS8osJhgSQGEJBNgPGD0LP3FihRguwA0gBISB1AYq9eEwJNGDdOgvSKAlIB
-        OE9AgMSBwwQMkPVwXa/h7JJXeJtAvgJDAoEJDKg3cID9ieQH4sc3oSGvgfMrNJAOsb7/fYHtrXcCUQmY
-        wJ5AHDCwggLsHZCAgwcggAAKAp3gIIXoxYffCh+gl4CEIIKIHwoHpDCQAiAqMFB9HyTg4oswPigQhgCg
-        +OIBBSkQIwov8qjiQATo2GMDOcZoZAIpSNBAAjzCaGKOCkQp5ZRSppAClQqoIIFHXHbppZcBAQA7
-</value>
-  </data>
+  <metadata name="usuarioIdLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="nombreLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="claveLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
 </root>

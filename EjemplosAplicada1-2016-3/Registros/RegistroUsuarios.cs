@@ -22,14 +22,30 @@ namespace EjemplosAplicada1_2016_3.Registros
         {
             Usuarios usuario = new Usuarios();
 
-            usuario.UsuarioId = 0;
-            usuario.Nombre = "enel";
-            usuario.Clave = "12345";
+            usuario = LlenarClase();
 
             if (UsuariosBll.Guardar(usuario))
             {
+                NewButton.PerformClick();
+
                 MessageBox.Show("Guardo. ehehehehe");
             }
+        }
+
+        private Usuarios LlenarClase()
+        {
+            Usuarios usuario = new Usuarios();
+
+            usuario.UsuarioId = Utilidades.ToInt(usuarioIdTextBox.Text);
+            usuario.Nombre = nombreTextBox.Text;
+            usuario.Clave = claveTextBox.Text;
+
+            return usuario;
+        }
+
+        private void NewButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

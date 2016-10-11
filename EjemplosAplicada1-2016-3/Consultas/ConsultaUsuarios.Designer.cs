@@ -44,32 +44,38 @@
             // 
             // DatosdataGridView
             // 
+            this.DatosdataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.DatosdataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DatosdataGridView.Location = new System.Drawing.Point(12, 84);
             this.DatosdataGridView.Name = "DatosdataGridView";
-            this.DatosdataGridView.Size = new System.Drawing.Size(583, 211);
+            this.DatosdataGridView.Size = new System.Drawing.Size(651, 276);
             this.DatosdataGridView.TabIndex = 0;
             // 
             // Imprimebutton
             // 
+            this.Imprimebutton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.Imprimebutton.Image = ((System.Drawing.Image)(resources.GetObject("Imprimebutton.Image")));
             this.Imprimebutton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Imprimebutton.Location = new System.Drawing.Point(12, 301);
+            this.Imprimebutton.Location = new System.Drawing.Point(12, 366);
             this.Imprimebutton.Name = "Imprimebutton";
             this.Imprimebutton.Size = new System.Drawing.Size(75, 51);
             this.Imprimebutton.TabIndex = 35;
             this.Imprimebutton.Text = "Imprimir";
             this.Imprimebutton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Imprimebutton.UseVisualStyleBackColor = true;
+            this.Imprimebutton.Click += new System.EventHandler(this.Imprimebutton_Click);
             // 
             // Buscarbutton
             // 
+            this.Buscarbutton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Buscarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Buscarbutton.Image")));
             this.Buscarbutton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Buscarbutton.Location = new System.Drawing.Point(540, 11);
+            this.Buscarbutton.Location = new System.Drawing.Point(608, 15);
             this.Buscarbutton.Margin = new System.Windows.Forms.Padding(2);
             this.Buscarbutton.Name = "Buscarbutton";
-            this.Buscarbutton.Size = new System.Drawing.Size(55, 45);
+            this.Buscarbutton.Size = new System.Drawing.Size(55, 52);
             this.Buscarbutton.TabIndex = 34;
             this.Buscarbutton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Buscarbutton.UseVisualStyleBackColor = true;
@@ -121,17 +127,19 @@
             // 
             // FiltrotextBox
             // 
+            this.FiltrotextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.FiltrotextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.FiltrotextBox.Location = new System.Drawing.Point(205, 12);
+            this.FiltrotextBox.Location = new System.Drawing.Point(205, 15);
             this.FiltrotextBox.Name = "FiltrotextBox";
-            this.FiltrotextBox.Size = new System.Drawing.Size(298, 20);
+            this.FiltrotextBox.Size = new System.Drawing.Size(398, 20);
             this.FiltrotextBox.TabIndex = 53;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(13, 10);
+            this.label1.Location = new System.Drawing.Point(13, 15);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(49, 18);
             this.label1.TabIndex = 54;
@@ -154,7 +162,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(607, 394);
+            this.ClientSize = new System.Drawing.Size(675, 429);
             this.Controls.Add(this.CamposComboBox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -167,6 +175,7 @@
             this.Controls.Add(this.DatosdataGridView);
             this.Name = "ConsultaUsuarios";
             this.Text = "ConsultaUsuarios";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.DatosdataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
